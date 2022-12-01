@@ -1,0 +1,23 @@
+# PREP-Certamen2-c-
+- Crear proyecto/Solución en blanco
+- Agregar los proyectos correspondientes a la solución en blanco
+- hacer las 3 capas (main, negocio, datos)
+- hacer referencias entre las tres
+- despues agrega paquetes nuget
+- “examinar” buscar: entity framework
+- aplicar a todas las capas y poner versión 6.4.4
+- agregar nuevo elemento en datos
+- buscar base de datos basada en servicios
+- propiedades de la bd, cambiar a copiar en el directorio solo si es posterior
+- abrir el explorador de servidores, click derecho en la tabla y agregar una nueva tabla
+- cambiar nombre a tabla, actualizar la pk (para que se coloque el nombre), crear los valores correspondientes con sus tipos de datos y su largo.
+- pulsar id, y en propiedades “especificación de identidad”, poner true en “es una identidad”
+- para agregar una fk, hay que hacer click derecho en claves externas y agregar clave externa
+- modificar valores en el código sql
+- clikear actualizar
+- dentro clickear actualizar base de datos
+- en datos, agregar nuevo elemento “ADO .NET entity data model”
+- Apretar siguiente dos veces, y después clickear donde dice tablas para que las seleccione todas, luego pulsar finalizar
+- click derecho en bd propiedades, copiar ruta y pegar ruta completa en app.config
+- copiar toda la ruta junto a las etiquetas connectionstring y pegarlas en todos los app.config al final
+- agregar clase nombreBLL en negocio
