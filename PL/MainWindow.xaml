@@ -1,0 +1,28 @@
+﻿<Window x:Class="PL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="SANSANI" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnActivar" Content="Activar Comanda" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" Width="101" Click="BtnActivar_Click"/>
+        <Button x:Name="btnIngresarPedido" Content="Ingresar Pedido" HorizontalAlignment="Left" Margin="339,10,0,0" VerticalAlignment="Top" Width="102" Click="BtnIngresarPedido_Click"/>
+        <Button x:Name="btnVerComandas" Content="Ver Comandas" HorizontalAlignment="Left" Margin="554,10,0,0" VerticalAlignment="Top" Width="104" Click="BtnVerComandas_Click"/>
+        <Label x:Name="lbMesa" Content="Mesa:" HorizontalAlignment="Left" Margin="34,62,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <ComboBox x:Name="cmbMesa" HorizontalAlignment="Left" Margin="188,65,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label x:Name="lbCantCom" Content="Cantidad de comensales:" HorizontalAlignment="Left" Margin="34,93,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox x:Name="txtCantComensales" HorizontalAlignment="Left" Height="23" Margin="188,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Button x:Name="btnActivarC" Content="Activar" HorizontalAlignment="Left" Margin="34,161,0,0" VerticalAlignment="Top" Width="75" Click="BtnActivarC_Click" Visibility="Hidden"/>
+        <Label x:Name="lbPmesa" Content="Mesa:" HorizontalAlignment="Left" Margin="56,65,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <ComboBox x:Name="cmbPmesa" HorizontalAlignment="Left" Margin="130,62,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label x:Name="lbPplato" Content="Plato:" HorizontalAlignment="Left" Margin="59,97,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <ComboBox x:Name="cmbPplato" HorizontalAlignment="Left" Margin="130,98,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label x:Name="lbPcant" Content="Cantidad:" HorizontalAlignment="Left" Margin="61,124,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox x:Name="txtPcant" HorizontalAlignment="Left" Height="23" Margin="130,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Button x:Name="btnPReg" Content="Registrar" HorizontalAlignment="Left" Margin="56,185,0,0" VerticalAlignment="Top" Width="75" Click="BtnPReg_Click"/>
+        <DataGrid x:Name="DGVClista" HorizontalAlignment="Left" Height="301" Margin="10,65,0,0" VerticalAlignment="Top" Width="774" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

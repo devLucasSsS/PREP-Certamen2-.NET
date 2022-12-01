@@ -1,0 +1,14 @@
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\Restaurant.mdf
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\Restaurant_log.ldf
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\DAL.dll.config
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\DAL.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\DAL.pdb
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\obj\Debug\DAL.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\obj\Debug\DAL.pdb
+C:\Users\Lucas PC\source\repos\Pprecertamen2\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

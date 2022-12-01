@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RestaurantModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Comanda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mesa" Type="int" Nullable="false" />
+    <Property Name="Comensales" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'C:\USERS\LUCAS PC\SOURCE\REPOS\PPRECERTAMEN2\DAL\RESTAURANT.MDF.dbo.Pedido' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Pedido">
+    <Key>
+      <PropertyRef Name="IdComanda" />
+      <PropertyRef Name="IdPlato" />
+      <PropertyRef Name="Cantidad" />
+    </Key>
+    <Property Name="IdComanda" Type="int" Nullable="false" />
+    <Property Name="IdPlato" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Plato">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Precio" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_IdComanda_Comanda">
+    <End Role="Comanda" Type="Self.Comanda" Multiplicity="1" />
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comanda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="IdComanda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdPlato_Plato">
+    <End Role="Plato" Type="Self.Plato" Multiplicity="1" />
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plato">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="IdPlato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RestaurantModelStoreContainer">
+    <EntitySet Name="Comanda" EntityType="Self.Comanda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Plato" EntityType="Self.Plato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pedido" EntityType="Self.Pedido" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pedido].[IdComanda] AS [IdComanda], 
+    [Pedido].[IdPlato] AS [IdPlato], 
+    [Pedido].[Cantidad] AS [Cantidad]
+    FROM [dbo].[Pedido] AS [Pedido]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_IdComanda_Comanda" Association="Self.FK_IdComanda_Comanda">
+      <End Role="Comanda" EntitySet="Comanda" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdPlato_Plato" Association="Self.FK_IdPlato_Plato">
+      <End Role="Plato" EntitySet="Plato" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

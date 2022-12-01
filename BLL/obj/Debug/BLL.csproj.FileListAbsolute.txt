@@ -1,0 +1,17 @@
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\Restaurant.mdf
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\Restaurant_log.ldf
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\BLL.dll.config
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\BLL.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\BLL.pdb
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\DAL.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\DAL.pdb
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\DAL.dll.config
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\obj\Debug\BLL.dll
+C:\Users\Lucas PC\source\repos\Pprecertamen2\BLL\obj\Debug\BLL.pdb
